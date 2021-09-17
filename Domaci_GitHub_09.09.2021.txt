@@ -1,0 +1,460 @@
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (main)
+$ git init
+Initialized empty Git repository in C:/Users/Slavisa/Desktop/Projekat/.git/
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fajl.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add fajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   fajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Napravili smo izmenu na fajlu fajl.txt"
+[master (root-commit) c408c33] Napravili smo izmenu na fajlu fajl.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 fajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git config --global user.name "Cemiska89"
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git config --global user.email "cemiska89@gmail.com"
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Napravili smo izmenu na fajlu fajl.txt"
+On branch master
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   fajl.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add fajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   fajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Dodat novi tekst u fajl.txt"
+[master 22e074e] Dodat novi tekst u fajl.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   fajl.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        novifajl.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add fajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   fajl.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        novifajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add novifajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   fajl.txt
+        new file:   novifajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Dodat novifajl.txt. Izmenjen fajl.txt"
+[master 7a9b8a4] Dodat novifajl.txt. Izmenjen fajl.txt
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 novifajl.txt
+
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git log
+commit 7a9b8a4e7e6532aaa370e70daac7d7d1f94939e5 (HEAD -> master)
+Author: Cemiska89 <cemiska89@gmail.com>
+Date:   Wed Sep 15 15:12:35 2021 +0200
+
+    Dodat novifajl.txt. Izmenjen fajl.txt
+
+commit 22e074eb060a47ba9175632215e410dea5c94dbb
+Author: Cemiska89 <cemiska89@gmail.com>
+Date:   Wed Sep 15 15:07:23 2021 +0200
+
+    Dodat novi tekst u fajl.txt
+
+commit c408c33fdb3f84c67623877104452519f613d189
+Author: unknown <cemiska89@gmail.com>
+Date:   Wed Sep 15 14:56:15 2021 +0200
+
+    Napravili smo izmenu na fajlu fajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   novifajl.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add novifajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   novifajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Izmenjen novifajl.txt"
+[master 96f09a3] Izmenjen novifajl.txt
+ 1 file changed, 1 insertion(+)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git log -v
+commit 96f09a39c134e7d37ad24edae5e909d47d2798bb (HEAD -> master)
+Author: Cemiska89 <cemiska89@gmail.com>
+Date:   Wed Sep 15 15:17:18 2021 +0200
+
+    Izmenjen novifajl.txt
+
+commit 7a9b8a4e7e6532aaa370e70daac7d7d1f94939e5
+Author: Cemiska89 <cemiska89@gmail.com>
+Date:   Wed Sep 15 15:12:35 2021 +0200
+
+    Dodat novifajl.txt. Izmenjen fajl.txt
+
+commit 22e074eb060a47ba9175632215e410dea5c94dbb
+Author: Cemiska89 <cemiska89@gmail.com>
+Date:   Wed Sep 15 15:07:23 2021 +0200
+
+    Dodat novi tekst u fajl.txt
+
+commit c408c33fdb3f84c67623877104452519f613d189
+Author: unknown <cemiska89@gmail.com>
+Date:   Wed Sep 15 14:56:15 2021 +0200
+
+    Napravili smo izmenu na fajlu fajl.txt
+:
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Slavisa/Desktop/Projekat/.git/
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git branch tok1
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git checkout tok1
+Switched to branch 'tok1'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git status
+On branch tok1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        veomanovifajl.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git add veomanovifajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git status
+On branch tok1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   veomanovifajl.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git commit -m "Dodat veomanovifajl.txt"
+[tok1 ec04244] Dodat veomanovifajl.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 veomanovifajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git checkout master
+Switched to branch 'master'
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        macka.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add macka.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   macka.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Dodat fajl macka.txt"
+[master c356955] Dodat fajl macka.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 macka.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git checkout tok1
+Switched to branch 'tok1'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git checkout master
+Switched to branch 'master'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git merge
+fatal: No remote for the current branch.
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git merge --help
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git merge tok1
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/Slavisa/Desktop/Projekat/.git/MERGE_MSG to DOS format...
+dos2unix: converting file C:/Users/Slavisa/Desktop/Projekat/.git/MERGE_MSG to Unix format...
+Merge made by the 'recursive' strategy.
+ veomanovifajl.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 veomanovifajl.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git checkout tok1
+Switched to branch 'tok1'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git branch tok2
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok1)
+$ git checkout tok2
+Switched to branch 'tok2'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git status
+On branch tok2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git add .
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git status
+On branch tok2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   pas.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git commit -m "Dodat fajl pas.txt"
+[tok2 65348bf] Dodat fajl pas.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pas.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git checkout master
+Switched to branch 'master'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git add .
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   pas.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git commit -m "Dodat pas.txt sa majumjau tekstom"
+[master 04f9c5d] Dodat pas.txt sa majumjau tekstom
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pas.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git checkout tok2
+Switched to branch 'tok2'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git checkout master
+Switched to branch 'master'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git merge tok2
+CONFLICT (add/add): Merge conflict in pas.txt
+Auto-merging pas.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      pas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master|MERGING)
+$ git add .
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   pas.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master|MERGING)
+$ git commit -m "Merge tok2"
+[master 955c6b3] Merge tok2
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (master)
+$ git checkout tok2
+Switched to branch 'tok2'
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git status
+On branch tok2
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    macka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git add .
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git status
+On branch tok2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    macka.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git commit -m "Izbrisan fajl macka.txt sa toka 2"
+[tok2 f2612be] Izbrisan fajl macka.txt sa toka 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 macka.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/Projekat (tok2)
+$ git checkout master
+Switched to branch 'master'
+
+
+
+
+
+
+
+
+
+
+

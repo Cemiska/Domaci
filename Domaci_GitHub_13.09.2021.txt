@@ -1,0 +1,111 @@
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop (main)
+$ git clone https://github.com/Cemiska/bootcampVezbanje.git
+Cloning into 'bootcampVezbanje'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Slavisa/Desktop/bootcampVezbanje/.git/
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git config --global user.name "Cemiska89"
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git config --global user.email "cemiska89@gmail.com"
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git add vezba1.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Milica_Pantic/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git add .
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git commit -m "Dodat folder Milica_Pantic/"
+[main ef768ad] Dodat folder Milica_Pantic/
+ 1 file changed, 4 insertions(+)
+ create mode 100644 Milica_Pantic/Licni_podaci.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vezba1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git add vezba1.txt
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   vezba1.txt
+
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git commit -m "Izmenjen fajl vezba1.txt"
+[main ed08b4f] Izmenjen fajl vezba1.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Slavisa@Slavisa MINGW64 ~/Desktop/bootcampVezbanje (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 688 bytes | 137.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Cemiska/bootcampVezbanje.git
+   997640a..ed08b4f  main -> main
+
+
